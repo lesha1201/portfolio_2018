@@ -111,6 +111,12 @@ gulp.task(
   })
 );
 
+gulp.task('docs', function() {
+  return gulp
+    .src('app/docs/*.+(pdf|docx|txt)')
+    .pipe(gulp.dest('dist/docs'))
+})
+
 gulp.task('default', gulp.series('watch'));
 
 gulp.task(
@@ -119,7 +125,7 @@ gulp.task(
     'clean:dist',
     'sass',
     'useref',
-    gulp.parallel('compress:html', 'compress:css', 'images'),
+    gulp.parallel('compress:html', 'compress:css', 'images', 'docs'),
     function(done) {
       done();
     }
