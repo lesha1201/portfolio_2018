@@ -76,7 +76,6 @@ gulp.task('useref', function() {
     .pipe(useref())
     .pipe(gulpIf('*.js', concat('js/index.min.js')))
     .pipe(gulpIf('*.js', uglify()))
-    .pipe(gulpIf('*.js', gzip()))
     .pipe(gulp.dest('dist'));
 });
 
