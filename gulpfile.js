@@ -82,7 +82,7 @@ gulp.task('useref', function() {
 
 gulp.task('images', function() {
   return gulp
-    .src('app/images/**/*.+(png|jpg|gif|svg)')
+    .src('app/images/**/*.+(png|jpg|gif|svg|ico)')
     .pipe(
       cache(
         imagemin({
