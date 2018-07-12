@@ -1,0 +1,172 @@
+@import 'helpers';
+
+@media only screen and (max-width: 1280px) {
+  body {
+    font-size: 18px;
+  }
+
+  .section {
+    padding: 4% 15%;
+  }
+
+  .contact-form {
+    margin-right: 60px;
+  }
+
+  .contact-form__input {
+    flex: 100%;
+
+    &:not(:last-of-type) {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1130px) {
+  .about-info {
+    flex-wrap: wrap;
+  }
+
+  .about-info__text {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .meta-info {
+    width: 100%;
+  }
+
+  .my-skills {
+    width: 100%;
+  }
+
+  .my-skills__skill {
+    width: 140px;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .contact-form {
+    flex: 100%;
+    order: 2;
+    margin-right: 0;
+  }
+
+  .social-btns {
+    justify-content: flex-start;
+  }
+
+  .social-btns__btn {
+    &:not(:last-of-type) {
+      margin-right: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .col-6 {
+    width: 100%;
+  }
+
+  .section {
+    padding: 3% 10%;
+  }
+
+  .section--home {
+    display: block;
+  }
+
+  .mob-nav-icon,
+  .mob-nav__close {
+    display: block;
+  }
+
+  .hero-text-box {
+    position: absolute;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    @include fluid-type(width, 20rem, 48.75rem, 13rem, 32rem);
+    @include fluid-type(height, 20rem, 48.75rem, 13rem, 32rem);
+  }
+
+  .hero-text-box__paragrah {
+    font-size: 8vw;
+  }
+
+  .hero-text-box__paragrah:first-child {
+    font-size: 12vw;
+  }
+
+  .hero-text-box__paragrah:nth-child(3) {
+    font-size: 6.5vw;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .work {
+    flex-wrap: wrap;
+  }
+
+  .work--reverse {
+    & .work__info {
+      padding-right: 0;
+    }
+  }
+
+  .work__info {
+    padding-left: 0;
+  }
+
+  .work__img {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .square-borders {
+    stroke-width: 7px;
+  }
+
+  .section__heading {
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .my-skills {
+    margin-bottom: 30px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  body {
+    font-size: 16px;
+  }
+
+  .section {
+    padding: 20px 30px;
+  }
+
+  .contact-form {
+    min-width: auto;
+  }
+
+  .social-btns {
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .social-btns__btn {
+    font-size: 25px;
+    &:not(:last-of-type) {
+      margin-right: 0;
+    }
+  }
+
+  .my-skills__skill:nth-child(2n) {
+    width: 100px;
+  }
+}
