@@ -50,21 +50,20 @@ body {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  outline: none;
   transition: 0.3s background;
-}
 
-.btn:hover {
-  background: darken(#fff, 5%);
+  &:hover, &:focus {
+    background: darken(#fff, 5%);
+  }
 }
 
 .btn--outline {
   background: transparent;
   border: 2px solid #000;
-}
 
-.btn--outline:hover {
-  background: inherit;
+  &:hover, &:focus {
+    background: inherit;
+  }
 }
 
 .btn--center {
