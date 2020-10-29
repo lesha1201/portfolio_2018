@@ -56,7 +56,6 @@ gulp.task('compress:css', function() {
     .src('dist/css/*css')
     .pipe(
       autoprefixer({
-        browsers: ['last 3 versions'],
         cascade: false
       })
     )
