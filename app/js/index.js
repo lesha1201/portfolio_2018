@@ -83,9 +83,6 @@ window.onload = function() {
 
     function disableScroll() {
       isScrollDisable = true;
-      if (window.addEventListener)
-        // older FF
-        window.addEventListener('DOMMouseScroll', preventDefault, false);
       window.onwheel = preventDefault; // modern standard
       window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
       window.ontouchmove = preventDefault; // mobile
@@ -94,8 +91,6 @@ window.onload = function() {
 
     function enableScroll() {
       isScrollDisable = false;
-      if (window.removeEventListener)
-        window.removeEventListener('DOMMouseScroll', preventDefault, false);
       window.onmousewheel = document.onmousewheel = null;
       window.onwheel = null;
       window.ontouchmove = null;
