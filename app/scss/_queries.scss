@@ -8,18 +8,6 @@
   .section {
     padding: 4% 15%;
   }
-
-  .contact-form {
-    margin-right: 60px;
-  }
-
-  .contact-form__input {
-    flex: 100%;
-
-    &:not(:last-of-type) {
-      margin-right: 0px;
-    }
-  }
 }
 
 @media only screen and (max-width: 1130px) {
@@ -42,24 +30,6 @@
 
   .my-skills__skill {
     width: 140px;
-  }
-}
-
-@media only screen and (max-width: 1030px) {
-  .contact-form {
-    flex: 100%;
-    order: 2;
-    margin-right: 0;
-  }
-
-  .social-btns {
-    justify-content: flex-start;
-  }
-
-  .social-btns__btn {
-    &:not(:last-of-type) {
-      margin-right: 25px;
-    }
   }
 }
 
@@ -150,10 +120,6 @@
     padding: 20px 30px;
   }
 
-  .contact-form {
-    min-width: auto;
-  }
-
   .social-btns {
     flex-wrap: wrap;
     justify-content: space-between;
@@ -161,8 +127,9 @@
 
   .social-btns__btn {
     font-size: 25px;
+
     &:not(:last-of-type) {
-      margin-right: 0;
+      margin-right: 16px;
     }
   }
 
